@@ -23,14 +23,36 @@ else:
     print('THEN WHAT ARE YOU DOING HERE?!?!')
     exit()
 
-print('Our trainer brands available are Nike, Adidas, New Balance and Hoka.')
-request = input('Which brand would you like to see the sizes we have availability for?')
-# user input returned, turned into ALL capital letters, and spacing removed (if new balance is types)
-request = request.upper().replace(" ", "")
-# if user input is in trainer list, then find the sizes of that key ID and print them
-if request in trainers:
-    sizeList = trainers[request]
-    print(sizeList)
-else:
-    print("Sorry, we don't stock that brand of trainer you have asked for, please try again.")
-    exit()
+# while loop, takes argument, checks for validity, and doesn't continue until condition is met
+while True:
+    # user input question
+    user_request = input('Which brand would you like to see the sizes we have availability for?')
+    # print line, with users input inside
+    print("Ok, let's take a look for", user_request, "trainers in our lists..")
+    # change the users input to one whole word (useful for new balance),
+    # then all uppercase (to check against trainers list)
+    request_caps = user_request.upper().replace(" ", "")
+
+    # if not statement. example: if request_caps IS NOT in trainers
+    if not request_caps in trainers:
+        # print this, and return to the beginning of the while loop
+        print("Sorry, but that didn't match in any of our lists. Please try again.")
+    else:
+        # now the condition has been met, exit the while loop
+        break
+
+# new variable which has user's requested trainer brands available sizes.
+sizeList = trainers[request_caps]
+print("Here are the sizes we have available:")
+print(sizeList)
+
+
+
+# if request_caps in trainers:
+#     sizeList = trainers[request_caps]
+#     print("Here are the sizes we have available:")
+#     print(sizeList)
+# else:
+#     print("Sorry, we don't stock that brand of trainer you have asked for, please try again.")
+#
+# input("Is there anything else we can help with?")
