@@ -111,8 +111,7 @@ while d < 8:
     print(d)
 
 # WHILE WITH ELSE
-# this will then do something else, once the True part of the loop is now False
-# basically now the condition is False
+# while condition True, do this until its false
 w = 1
 while w < 8:
     w += 1
@@ -204,3 +203,4 @@ for x in range(start, stop, step):
     print(x)
 else:
     print('Finished!')
+
