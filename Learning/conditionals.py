@@ -185,7 +185,7 @@ print('')
 print('')
 
 # FOR RANGE WITH STEP
-# start with 2, end at 20, in 2 step increments
+# start with 2, end at 20, in 2-step increments
 # START, STOP, STEP
 for x in range(2, 20, 2):
     print(x)
@@ -204,4 +204,3 @@ for x in range(start, stop, step):
     print(x)
 else:
     print('Finished!')
-
