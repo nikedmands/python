@@ -1,4 +1,6 @@
-# variables
+import getpass
+
+#variables
 pin = 7412
 attempts = 0
 max_attempts = 3

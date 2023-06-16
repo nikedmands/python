@@ -13,7 +13,7 @@ trainers = {"NIKE": NIKE,
 
 print('Welcome to our running trainer store!')
 # input function, request an input from the user about how to proceed
-request = input("Do you want to know about our trainer stock?")
+request = input("Do you want to know about our trainer stock? ")
 # capitalize user input
 request = request.capitalize()
 # if statement to get a yes/no answer
@@ -23,10 +23,11 @@ else:
     print('THEN WHAT ARE YOU DOING HERE?!?!')
     exit()
 
+print('We currently stock Nike, Adidas, New Balance and Hoka trainers.')
 # while loop, takes argument, checks for validity, and doesn't continue until condition is met
 while True:
     # user input question
-    user_request = input('Which brand would you like to see the sizes we have availability for?')
+    user_request = input('Which brand would you like to see the sizes we have availability for? ')
     # print line, with users input inside
     print("Ok, let's take a look for", user_request, "trainers in our lists..")
     # change the users input to one whole word (useful for new balance),
