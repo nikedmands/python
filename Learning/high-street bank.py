@@ -11,12 +11,12 @@ print('Welcome to Nik banking, where we def WONT loose all your money!')
 while attempts < max_attempts:
     # users pic guess
     print('Please enter your 4 digit PIN.')
-    print('You have', max_attempts - attempts, 'attempts remaining!')
-    guess: str = input("PIN: ")
+    print('You have', max_attempts - attempts, 'attempt(s) remaining!')
+    guess = getpass.getpass(prompt='PIN: ')
     # convert the guess to a number (input gives us a string)
     if len(guess) > 4:
         print('Incorrect amount of digits! Please enter your 4 digit PIN!')
-        attempts += 1
+        print('')
     else:
         guess = int(guess)
         # if the guess is identical to the pin, print 'Correct' & exit
@@ -27,8 +27,7 @@ while attempts < max_attempts:
         else:
             print('Wrong, please try again.')
             attempts += 1
-            # print how many remaining attempts
-            print('You have', max_attempts - attempts, 'attempts remaining!')
+            print('')
 
 # if max number of attempts reached
 # will only show when while condition is no longer attempts < max_attempts
