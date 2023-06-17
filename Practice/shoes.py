@@ -4,7 +4,7 @@ ADIDAS = [8, 12]
 NEWBALANCE = [7, 8, 9, 10, 11]
 HOKA = [11]
 
-# dictionary of the brand names, and their store list of sizes
+# dictionary of the brand names, and then store list of sizes
 trainers = {"NIKE": NIKE,
             "ADIDAS": ADIDAS,
             "NEWBALANCE": NEWBALANCE,
