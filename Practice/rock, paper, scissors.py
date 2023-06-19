@@ -1,6 +1,6 @@
 import random
 
-# list of choises available
+# list of choices available
 choices = ['rock', 'paper', 'scissors']
 # track scores
 comp_score = 0
@@ -8,7 +8,7 @@ user_score = 0
 
 # opening print
 print('Welcome to Rock, Paper, Scissors. First to 10 wins!')
-# while true loop, keepps running until a condition is met
+# while true loop, keeps running until a condition is met
 while True:
     # if score has been reached, break from the loop
     if user_score == 10 or comp_score == 10:
