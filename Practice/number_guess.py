@@ -1,14 +1,12 @@
 import random
 
 # generate a random number, between 1-100
-num = random.randint(1, 101)
+num = random.randint(0, 101)
 # guesses variables
 max_guess = 10
 guess = 0
 
-x = 'y'
-
-while x == 'y':
+while guess < max_guess:
     # welcome
     print('Welcome to the number guessing game. Please guess the number between 0 - 100')
     # start or while loop
@@ -33,5 +31,5 @@ while x == 'y':
             print('It only took you', guess, 'attempt(s)!')
             exit()
 # this will print it the while loop didn't run (i.e. guess no longer less than 10, max number of guesses allowed)
-print('Too many attempts. Goobye!')
+print('Too many attempts. Goodbye!')
 exit()
