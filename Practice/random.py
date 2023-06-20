@@ -9,3 +9,6 @@ item_no = 567
 price = 49.95
 my_order = "I want {} pieces of item {} for {} dollars."
 print(my_order.format(quantity, item_no, price))
+
+print(a.replace("H", "J"))
+
