@@ -1,4 +1,4 @@
-import STUFF
+import random
 # create list
 list = ['apple', 'banana', 'orange', 'pear', 'grape', 'kiwi', 'strawberry', 'blueberry', 'raspberry', 'mango', 'pineapple']
 user_list = []
