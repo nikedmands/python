@@ -1,4 +1,4 @@
-import STUFF
+import random
 
 name = input('Please enter your name: ')
 print('Welcome', name, 'to our guess the fruit game.')
