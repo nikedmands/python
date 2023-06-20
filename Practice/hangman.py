@@ -1,31 +1,28 @@
 import random
 # create list
-list = ['apple', 'banana', 'orange', 'pear', 'grape', 'kiwi', 'strawberry', 'blueberry', 'raspberry', 'mango', 'pineapple']
-user_list = []
+words_list = ['apple', 'banana', 'orange', 'pear', 'grape', 'kiwi', 'strawberry', 'blueberry', 'raspberry', 'mango', 'pineapple']
+
+
 #  random choice from the list
-random_choice = random.choice(list)
+random_choice = random.choice(words_list)
 # character length of the word
 length_of_choice = len(random_choice)
 
 print('Welcome to hangman!')
 print('Your hidden fruit to guess is', length_of_choice, 'letters long!')
+print("~~~~~~~~~~~~~~~~~~", random_choice, "~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-letter = input('Please enter one letter: ')
-for c in range(0, length_of_choice):
-    if random_choice[c] == letter:
-        print(random_choice[c], end="")
-    elif random_choice[c] == " ":
-        print(" ", end="")
-    else:
-        print("-", end="")
+y = 1
+while y == 1:
+    letter = input('Please enter a letter: ')
+    if letter in random_choice:
+        print('Your letter was found')
+        position = random_choice.index(letter)
+        print(position)
 
 
-# while True:
-#     letter = input('Please enter one letter: ')
-#     if len(letter) == 1:
-#
 
-# user guess must be 1 letter
+    # user guess must be 1 letter
 # user guess, if that character is in the new variable, show yes and its location
 # loop guesses until correct word
 # end if max guesses of 10 is reached
