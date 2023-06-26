@@ -10,7 +10,7 @@ ready = input("Ready? (press 'y', then enter to begin. The timer will start as s
 timeA = time.time()
 # user types
 user_input = input('GO: ')
-# count how long it took
+# stop the timer
 timeB = time.time()
 # variable to check user input against
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
