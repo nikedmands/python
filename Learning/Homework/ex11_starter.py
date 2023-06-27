@@ -17,7 +17,7 @@ print(Belgium.replace(",", ":"))
 print('')
 
 # 3c
-# pop of Belgium (2nd field), plus the pop of capital city (4th field) - should be 11183818
+# population of Belgium (2nd field), plus the population of capital city (4th field) - should be 11183818
 print('Question 3c')
 # create split (creates new substrings) of each item, separated by a comma (',')
 a = Belgium.split(",")
