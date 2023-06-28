@@ -29,7 +29,7 @@ def square_digits(num):
         i += 1
     # eval will remove the quotations from the beginning and end of the string
     answer1 = eval(answer)
-    return answer1
+    print(answer1)
 
 
 # pass in the function
