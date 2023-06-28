@@ -181,3 +181,9 @@ print("Your sentence in reverse is:", sentence[ending::-1])
 # EXERCISE 3 - counts words in the string, separated by spaces
 count_words = sentence.split()
 print("There is/are", len(count_words), "separate words in your sentence")
+
+# remove whitespaces, inside the string body
+x = "skd    wakdm"
+print(x)
+x = ''.join(x.split())
+print(x)
