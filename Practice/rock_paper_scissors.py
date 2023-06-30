@@ -1,4 +1,4 @@
-import STUFF
+import random
 
 # list of choices available
 choices = ['rock', 'paper', 'scissors']
