@@ -9,9 +9,6 @@ def solutions(s):
             countA += 1
         elif i == 'N':
             countN += 1
-    # print(countB)
-    # print(countA)
-    # print(countN)
     counter = 0
     while True:
         if countB >= 1 and countA >= 3 and countN >= 2:
@@ -21,14 +18,11 @@ def solutions(s):
             countN -= 2
         else:
             break
-    # print(countB)
-    # print(countA)
-    # print(countN)
     print(counter)
 
 
-
 solutions("QABAAAWOBL")
+
 
 # NAANAAXNABABYNNBZ
 # B-A-N-A-N-A

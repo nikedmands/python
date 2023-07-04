@@ -2,7 +2,6 @@
 file = open('country.txt', 'x')
 file.close()
 
-
 # b) append the file, to show a country on each line, with its length stated too
 # append = is the call to open the file in append mode
 append = open('country.txt', 'a')
@@ -12,7 +11,6 @@ countries = ["England: 7\n", "France: 6\n", "Spain: 5\n", "USA: 3\n" "Australia:
 append.writelines(countries)
 # close the call
 append.close()
-
 
 # c) read back as dictionary data structure
 # create empty dictionary
@@ -26,19 +24,17 @@ for line in pull_dict:
     # country KEY is stored at index 0
     country = x[0]
     # length of the country is stored at index 1, but remove the \n printed at the end of the value
-    length = x[1].rstrip('\n')
+    length = x[1]
     # write the data to the dictionary, then move onto the next line
     country_dict[country] = length
 pull_dict.close()
 # show that the dictionary now contains values
 print(country_dict)
 
-
 # d) add another country to the dictionary
 country_dict["Mexico"] = "6"
 # show in the console that Mexico has been added
 print(country_dict)
-
 
 # e) iterate over the dictionary and append the file in format specified above
 # iterate through the file using WITH
