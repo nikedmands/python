@@ -30,4 +30,4 @@ class Account:
         return self.balance
 
 
-# OBJECTS, calling a class creates a new instance object
+# self means this instance.
