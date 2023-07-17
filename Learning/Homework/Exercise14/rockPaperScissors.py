@@ -87,15 +87,19 @@ print("Thanks for playing!")
 
 # write the score and the time of playing the game to the file
 now = datetime.now()
+# dt_string variable assigned with the date/time details.
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
+# use with statement for safer use. automatically closes the file once finished
 with open('scoresheet.txt', 'a') as read:
+    # print the current date and time, plus scores
     read.write(dt_string + "\n" + name + ' scored: ' + str(len(user_score)) + '. AI scored: ' + str(len(ai_score)) + '\n')
+    # if statement to print either the user, or AI won the round
     if user_score > ai_score:
         read.write(name + " won! \n")
     else:
         read.write("AI won :(. \n")
 
-    
+
 
 
