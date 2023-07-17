@@ -1,4 +1,6 @@
 import random
+import os
+from datetime import datetime
 
 # dictionary to store what loses as a key, value pair
 loses_to = {
@@ -82,3 +84,18 @@ if user_score > ai_score:
 else:
     print('LOL, you lost :(.')
 print("Thanks for playing!")
+
+# write the score and the time of playing the game to the file
+now = datetime.now()
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+
+with open('scoresheet.txt', 'a') as read:
+    read.write(dt_string + "\n" + name + ' scored: ' + str(len(user_score)) + '. AI scored: ' + str(len(ai_score)) + '\n')
+    if user_score > ai_score:
+        read.write(name + " won! \n")
+    else:
+        read.write("AI won :(. \n")
+
+    
+
+
